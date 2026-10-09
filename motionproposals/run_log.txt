@@ -1,0 +1,26 @@
+[    0.8s] train motions 6698, test motions 2901, test boards 192
+[   28.9s] views built: {'w_de': 112535, 'wc_de': 161652, 'c_de': 49129, 'w_fr': 115043, 'c_fr': 38072, 'era_de': 562627, 'bal_de': 112535}
+[ 1100.6s] view w_de    AUC by lambda {0.5: 67.85, 1.0: 68.38, 2.0: 68.34} -> 1.0 | board score 18.43
+[ 1101.6s] view wc_de   AUC by lambda {0.5: 67.12, 1.0: 67.56, 2.0: 68.0} -> 2.0 | board score 18.55
+[ 1102.5s] view c_de    AUC by lambda {0.5: 65.27, 1.0: 65.95, 2.0: 66.33} -> 2.0 | board score 15.89
+[ 1103.3s] view w_fr    AUC by lambda {0.5: 64.45, 1.0: 64.78, 2.0: 65.4} -> 2.0 | board score 14.97
+[ 1104.2s] view c_fr    AUC by lambda {0.5: 63.84, 1.0: 63.98, 2.0: 63.77} -> 1.0 | board score 12.34
+[ 1105.2s] view era_de  AUC by lambda {0.5: 68.32, 1.0: 68.44, 2.0: 68.46} -> 2.0 | board score 18.65
+[ 1106.0s] view bal_de  AUC by lambda {0.5: 68.62, 1.0: 68.68, 2.0: 68.09} -> 1.0 | board score 20.16
+[ 1110.0s] transformer branch skipped: no GPU
+[ 1111.6s] ensemble step 0: +bal_de -> AUC 68.68
+[ 1113.2s] ensemble step 1: +c_de -> AUC 69.67
+[ 1114.8s] ensemble step 2: +w_de -> AUC 69.57
+[ 1116.4s] ensemble step 3: +wc_de -> AUC 69.72
+[ 1118.1s] ensemble step 4: +w_de -> AUC 69.62
+[ 1119.9s] ensemble step 5: +wc_de -> AUC 69.68
+[ 1121.5s] ensemble step 6: +w_de -> AUC 69.64
+[ 1123.1s] ensemble step 7: +wc_de -> AUC 69.64
+[ 1124.9s] ensemble step 8: +bal_de -> AUC 69.65
+[ 1126.4s] ensemble step 9: +wc_de -> AUC 69.63
+[ 1128.0s] ensemble step 10: +c_fr -> AUC 69.72
+[ 1129.7s] ensemble step 11: +bal_de -> AUC 69.86
+[ 1129.9s] greedy best AUC 69.86 vs uniform blend AUC 68.90
+[ 1130.1s] ensemble weights {'bal_de': 0.25, 'c_de': 0.08333333333333333, 'wc_de': 0.3333333333333333, 'w_de': 0.25, 'c_fr': 0.08333333333333333}
+[ 1130.1s] OOF board score: sinkhorn 20.96 | raw 20.63 -> use_sinkhorn=True
+[ 1130.4s] wrote out/submission.csv (192 boards)
